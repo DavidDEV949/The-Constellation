@@ -1,3 +1,3 @@
-#THE CONSTELLATION
+# THE CONSTELLATION
 
 Official Github repository for TheConstellation.
