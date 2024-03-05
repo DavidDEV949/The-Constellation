@@ -215,7 +215,7 @@ GameObject:
   - component: {fileID: 531205221}
   - component: {fileID: 531205220}
   m_Layer: 0
-  m_Name: NightHillback
+  m_Name: NightHillBack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
