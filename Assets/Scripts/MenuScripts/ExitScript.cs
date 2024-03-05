@@ -9,7 +9,11 @@ public class ExitScript : MonoBehaviour
     public void Exit()
     {
         Application.Quit();
-        EditorApplication.isPlaying = false;
+
+        #if UNITY_EDITOR
+            EditorApplication.isPlaying = false;
+        #endif
+
     }
 
 }
