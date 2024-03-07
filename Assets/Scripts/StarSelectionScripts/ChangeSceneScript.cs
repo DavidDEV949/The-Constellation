@@ -11,8 +11,8 @@ public class ChangeSceneScript : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    public static void ChangeScene(string sceneName)
     {
-        
+        UnityEngine.SceneManagement.SceneManager.LoadScene(sceneName);
     }
 }
