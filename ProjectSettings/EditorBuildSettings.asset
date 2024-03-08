@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/StarSelection.unity
     guid: 93e1beeb210315b4b99172b4e21cb8c6
+  - enabled: 1
+    path: Assets/Scenes/Minigame1.unity
+    guid: 8a5b4bf2a4571c547bf5c4abaa190dfb
   m_configObjects: {}
