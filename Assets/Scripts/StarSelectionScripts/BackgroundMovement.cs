@@ -11,7 +11,6 @@ public class BackgroundMovement : MonoBehaviour
     {
         SpeedX = 1f;
     }
-
     void Update()
     {
         transform.Translate(new Vector2(-SpeedX * Time.deltaTime, 0));
@@ -23,3 +22,5 @@ public class BackgroundMovement : MonoBehaviour
     }
 
 }
+//no se que hace esto XD
+//buenos días, buenas tardes y buenas noches
