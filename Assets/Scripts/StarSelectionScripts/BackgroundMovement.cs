@@ -5,18 +5,16 @@ using UnityEngine;
 public class BackgroundMovement : MonoBehaviour
 {
 
-    Transform tr;
-    float SpeedX;
+    public float SpeedX;
 
     void Start()
     {
-        tr = GetComponent<Transform>();
         SpeedX = 1f;
     }
 
     void Update()
     {
-        tr.Translate(-SpeedX * Time.deltaTime, 0, 0);
+        transform.Translate(new Vector2(-SpeedX * Time.deltaTime, 0));
     }
 
 }
