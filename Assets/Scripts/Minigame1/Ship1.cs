@@ -25,6 +25,5 @@ public class Ship1 : MonoBehaviour
             rb2d.velocity -= new Vector2(0, gravity * Time.deltaTime);
         }
         rb2d.velocity = new Vector2(rb2d.velocity.x, Mathf.Clamp(rb2d.velocity.y, -gravity / 2, gravity));
-        transform.GetChild(0).GetComponent<SpriteRenderer>().flipX = !transform.GetChild(0).GetComponent<SpriteRenderer>().flipX;
     }
 }
