@@ -15,6 +15,11 @@ public class BackgroundMovement : MonoBehaviour
     void Update()
     {
         transform.Translate(new Vector2(-SpeedX * Time.deltaTime, 0));
+
+        if(transform.position.x < -17.91f)
+        {
+            transform.Translate(new Vector2(35.82f, 0));
+        }
     }
 
 }
