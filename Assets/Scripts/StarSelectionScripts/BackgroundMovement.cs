@@ -5,12 +5,8 @@ using UnityEngine;
 public class BackgroundMovement : MonoBehaviour
 {
 
-    public float SpeedX;
+    public float SpeedX = 1f;
 
-    void Start()
-    {
-        SpeedX = 1f;
-    }
     void Update()
     {
         transform.Translate(new Vector2(-SpeedX * Time.deltaTime, 0));
