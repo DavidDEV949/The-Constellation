@@ -566,7 +566,7 @@ GameObject:
   - component: {fileID: 695507710}
   - component: {fileID: 695507708}
   m_Layer: 0
-  m_Name: ParedAbajo
+  m_Name: Clave de sol
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -921,7 +921,7 @@ GameObject:
   - component: {fileID: 1095617202}
   - component: {fileID: 1095617200}
   m_Layer: 0
-  m_Name: ParedArriba
+  m_Name: Clave de fa
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
