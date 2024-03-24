@@ -10,6 +10,11 @@ public class Player : MonoBehaviour {
     public float yV = 0f;
     public float acceleration = 10f;
     public float maxGravity = 10f;
+    public float timer = 0f;
+
+    public bool coinOneUnlocked = false;
+    public bool coinTwoUnlocked = false;
+    public bool coinThreeUnlocked = false;
 
     void Start ()
     {
@@ -33,6 +38,39 @@ public class Player : MonoBehaviour {
 
         transform.eulerAngles = Vector3.forward * ((yV / maxGravity) * 40);
         rb2D.velocity = new Vector2(0, yV);
+        timer += Time.deltaTime;
+
+        if(timer > 15f)
+        {
+          if(coinOneUnlocked)
+          {
+if(timer > 25f)
+        {
+          if(coinTwoUnlocked)
+          {
+            if(timer > 35f)
+        {
+          if(coinThreeUnlocked)
+          {
+
+          }
+          else 
+          {
+ 
+          }
+        }
+          }
+          else 
+          {
+ 
+          }
+        }
+          }
+          else 
+          {
+ 
+          }
+        }
     }
 
     IEnumerator AsteroidLoop()
