@@ -13,7 +13,7 @@ public class Player : MonoBehaviour {
 
     void Start ()
     {
-        StartCoroutine(A());
+        StartCoroutine(AsteroidLoop());
         rb2D = GetComponent<Rigidbody2D>();
     }
 	
@@ -35,7 +35,7 @@ public class Player : MonoBehaviour {
         rb2D.velocity = new Vector2(0, yV);
     }
 
-    IEnumerator A()
+    IEnumerator AsteroidLoop()
     {
         while (true)
         {
