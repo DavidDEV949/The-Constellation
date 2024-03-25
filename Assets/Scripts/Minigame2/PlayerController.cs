@@ -4,6 +4,8 @@ public class PlayerController : MonoBehaviour
 {
     public float moveSpeed = 7f;
     public float jumpForce = 400f;
+    public float coyoteTime = 0.1f;
+    private float coyoteCounter = 0f;
 
     private Rigidbody2D rb;
     private bool isGrounded;
@@ -21,8 +23,17 @@ public class PlayerController : MonoBehaviour
         float moveInput = Input.GetAxis("Horizontal");
         rb.velocity = new Vector2(moveInput * moveSpeed, rb.velocity.y);
 
+        if (isGrounded)
+        {
+            coyoteCounter = coyoteTime;
+        }
+        else
+        {
+            coyoteCounter -= Time.deltaTime;
+        }
+
         // Salto
-        if (Input.GetButtonDown("Jump") && isGrounded)
+        if ((Input.GetButtonDown("Jump") && isGrounded) || (Input.GetButtonDown("Jump") && coyoteCounter > 0f))
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
         }
