@@ -1226,6 +1226,10 @@ MonoBehaviour:
   yV: 0
   acceleration: 29
   maxGravity: 10
+  timer: 0
+  coinOneUnlocked: 0
+  coinTwoUnlocked: 0
+  coinThreeUnlocked: 0
 --- !u!1 &1909441285
 GameObject:
   m_ObjectHideFlags: 0
