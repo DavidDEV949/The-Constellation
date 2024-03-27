@@ -7,15 +7,24 @@ public class MovimientoTomate : MonoBehaviour
     public float tiempoDeMovimiento = 0.5f; // Tiempo en segundos para el movimiento
     public float reduccionDeTamaño = 0.5f; // Porcentaje de reducción de tamaño (0.5 = 50%)
     public float tiempoDeEsperaEntreLanzamientos = 0.8f; // Tiempo de espera entre lanzamientos
+    public Vector3 posicionInicial = new Vector3(-4.65f, -3.83f, 0f); // Posición inicial del Tomate
+    public Vector3 escalaInicial = new Vector3(0.708755f, 0.6648795f, 1f); // Escala inicial del Tomate
 
-    private Vector3 posicionInicial; // Posición inicial del Tomate
     private Vector3 posicionFinal; // Posición final del Tomate
     private float tiempoTranscurrido = 0f; // Tiempo transcurrido desde el inicio del movimiento
 
+    // Declaración de un delegado que representa la función de impacto
+    public delegate void ImpactoAction();
+
+    // Evento que se activa cuando ocurre el impacto
+    public static event ImpactoAction OnImpacto;
+
     private void Start()
     {
-        // Guardar la posición inicial del Tomate
-        posicionInicial = transform.position;
+        // Establecer la posición inicial del Tomate
+        transform.position = posicionInicial;
+        // Establecer la escala inicial del Tomate
+        transform.localScale = escalaInicial;
     }
 
     private void Update()
@@ -62,5 +71,15 @@ public class MovimientoTomate : MonoBehaviour
 
         // Esperar un tiempo antes de permitir otro lanzamiento
         yield return new WaitForSeconds(tiempoDeEsperaEntreLanzamientos);
+
+        // Activar el evento de impacto
+        if (OnImpacto != null)
+        {
+            OnImpacto();
+        }
+
+        // Después de esperar, regresar el Tomate a la posición y tamaño inicial
+        transform.position = posicionInicial;
+        transform.localScale = escalaInicial;
     }
 }
