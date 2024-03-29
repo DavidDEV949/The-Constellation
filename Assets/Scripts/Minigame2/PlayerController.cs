@@ -9,12 +9,12 @@ public class PlayerController : MonoBehaviour
 
     private Rigidbody2D rb;
     private bool isGrounded;
-    private Collider2D coll;
+    private SpriteRenderer renderer;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        coll = GetComponent<Collider2D>();
+        renderer = GetComponent<SpriteRenderer>();
     }
 
     void Update()
@@ -22,6 +22,15 @@ public class PlayerController : MonoBehaviour
         // Movimiento horizontal
         float moveInput = Input.GetAxis("Horizontal");
         rb.velocity = new Vector2(moveInput * moveSpeed, rb.velocity.y);
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+            renderer.flipX = true;
+        }
+
+        if (Input.GetKeyDown(KeyCode.D))
+        {
+            renderer.flipX = false;
+        }
 
         if (isGrounded)
         {
@@ -36,6 +45,23 @@ public class PlayerController : MonoBehaviour
         if ((Input.GetButtonDown("Jump") && isGrounded) || (Input.GetButtonDown("Jump") && coyoteCounter > 0f))
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+        }
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        // Verificar si el jugador está en el suelo
+        if (collision.gameObject.CompareTag("Ground"))
+        {
+            isGrounded = true;
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Spike"))
+        {
+            Destroy(gameObject);
         }
     }
 

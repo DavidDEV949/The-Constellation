@@ -18,5 +18,4 @@ public class BackgroundMovement : MonoBehaviour
     }
 
 }
-//no se que hace esto XD
-//buenos días, buenas tardes y buenas noches 👋
+
