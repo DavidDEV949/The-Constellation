@@ -63,6 +63,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Minigame17.unity
     guid: ac22bfe175f2b6c47ba80a1568e29cc7
   - enabled: 1
+    path: Assets/Scenes/Options.unity
+    guid: 748a71a793f83b04290eb3e56d24ae98
+  - enabled: 1
     path: Assets/Scenes/BossfightStar.unity
     guid: 1f57ea185a3f79b479925ac66baf4873
   m_configObjects: {}
