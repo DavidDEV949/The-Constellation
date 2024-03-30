@@ -8,11 +8,13 @@ public class PlayerController : MonoBehaviour
     private float coyoteCounter = 0f; // Nuevo: Contador de tiempo de coyote
 
     private Rigidbody2D rb;
+    private SpriteRenderer spriteRenderer;
     private bool isGrounded;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     void Update()
@@ -20,6 +22,17 @@ public class PlayerController : MonoBehaviour
         // Movimiento horizontal
         float moveInput = Input.GetAxis("Horizontal");
         rb.velocity = new Vector2(moveInput * moveSpeed, rb.velocity.y);
+
+
+        if (Input.GetKey(KeyCode.A))
+        {
+            spriteRenderer.flipX = true;
+        }
+
+        if (Input.GetKey(KeyCode.D))
+        {
+            spriteRenderer.flipX = false;
+        }
 
         // Nuevo: Actualizar el contador de coyote time
         if (isGrounded)
@@ -36,6 +49,14 @@ public class PlayerController : MonoBehaviour
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
             coyoteCounter = 0f; // Nuevo: Restablecer el contador de coyote time después del salto
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Spike"))
+        {
+            Destroy(gameObject);
         }
     }
 
