@@ -40987,7 +40987,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 7
   jumpForce: 12
-  coyoteTime: 0.2
+  coyoteTime: 0.1
 --- !u!1 &2117597866
 GameObject:
   m_ObjectHideFlags: 0
