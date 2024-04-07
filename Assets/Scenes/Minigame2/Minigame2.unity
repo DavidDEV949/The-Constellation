@@ -40166,7 +40166,7 @@ Tilemap:
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Origin: {x: -38, y: -193, z: 0}
-  m_Size: {x: 92, y: 200, z: 1}
+  m_Size: {x: 96, y: 200, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
   m_TileOrientation: 0
   m_TileOrientationMatrix:
