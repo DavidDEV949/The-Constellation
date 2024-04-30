@@ -8,6 +8,7 @@ TagManager:
   - Tomate
   - Spike
   - Fuego
+  - ground
   layers:
   - Default
   - TransparentFX
