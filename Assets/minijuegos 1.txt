@@ -2,10 +2,10 @@ THE CONSTELLATION____________MINIJUEGOS
 1) Avión GD
 2) Plataformas
 3) Lanzatomates
-4) Dinosaurio de google
-5) Escapar de la cárcel
+4) Escapar de la cárcel
+5) Dinosaurio de google
 6) Juego de puzle
-7) Carreras
+7) ???
 8) Conducir un coche
 9) Subway surfers 2d
 10) Pacman
