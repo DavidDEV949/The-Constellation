@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 607581912}
   - component: {fileID: 607581911}
   - component: {fileID: 607581910}
+  - component: {fileID: 607581913}
   m_Layer: 0
   m_Name: Otto
   m_TagString: Untagged
@@ -191,6 +192,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &607581913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 607581909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b90d7d7262cf6b44c85f6df5214baf19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &607581914
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -269,7 +282,7 @@ GameObject:
   - component: {fileID: 714353058}
   m_Layer: 0
   m_Name: Peligro1
-  m_TagString: Untagged
+  m_TagString: Peligro
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -395,7 +408,7 @@ GameObject:
   - component: {fileID: 1158321760}
   m_Layer: 0
   m_Name: Peligro2
-  m_TagString: Untagged
+  m_TagString: Peligro
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

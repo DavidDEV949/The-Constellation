@@ -9,6 +9,7 @@ TagManager:
   - Spike
   - Fuego
   - ground
+  - Peligro
   layers:
   - Default
   - TransparentFX
