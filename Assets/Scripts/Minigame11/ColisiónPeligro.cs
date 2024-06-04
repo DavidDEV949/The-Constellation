@@ -4,14 +4,22 @@ using UnityEngine;
 
 public class ColisiónPeligro : MonoBehaviour
 {
-    // Este método se llama cuando el objeto comienza a colisionar con otro objeto
+    void Start()
+    {
+        gameObject.SetActive(true);
+    }
+
     void OnCollisionEnter2D(Collision2D collision)
     {
-        // Verifica si el objeto con el que se ha colisionado tiene la etiqueta "Peligro"
         if (collision.gameObject.CompareTag("Peligro"))
         {
-            // Aquí puedes poner el código que se debe ejecutar al detectar la colisión con el objeto peligroso
-            Debug.Log("¡Colisión con objeto peligroso detectada!");
+            Debug.Log("¡Has muerto! (Minigame11:Peligro)");
+            Te_acabas_de_hacer_la_muricion();
         }
+    }
+
+    void Te_acabas_de_hacer_la_muricion()
+    {
+        gameObject.SetActive(false);
     }
 }
