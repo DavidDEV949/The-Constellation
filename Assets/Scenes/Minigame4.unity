@@ -215,7 +215,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afab6b32ef6677a4ca48ed1f265c532c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SpeedX: 3
+  SpeedX: 5
 --- !u!1 &614570580
 GameObject:
   m_ObjectHideFlags: 0
@@ -246,7 +246,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afab6b32ef6677a4ca48ed1f265c532c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SpeedX: 9
+  SpeedX: 15
 --- !u!212 &614570582
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -491,7 +491,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afab6b32ef6677a4ca48ed1f265c532c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SpeedX: 9
+  SpeedX: 15
 --- !u!212 &1503574642
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -650,7 +650,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afab6b32ef6677a4ca48ed1f265c532c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SpeedX: 3
+  SpeedX: 5
 --- !u!1 &1553776513
 GameObject:
   m_ObjectHideFlags: 0
@@ -878,7 +878,7 @@ GameObject:
   - component: {fileID: 1854477735}
   m_Layer: 0
   m_Name: Fire
-  m_TagString: Fuego
+  m_TagString: Peligro
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -962,8 +962,8 @@ MonoBehaviour:
   startX: 10.27
   endX: -10
   minWaitTime: 0
-  maxWaitTime: 0.7
-  moveDuration: 2.25
+  maxWaitTime: 0.5
+  moveDuration: 1.3235294
 --- !u!61 &1854477735
 BoxCollider2D:
   m_ObjectHideFlags: 0
