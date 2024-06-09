@@ -12,60 +12,60 @@ EditorBuildSettings:
     path: Assets/Scenes/StarSelection.unity
     guid: 93e1beeb210315b4b99172b4e21cb8c6
   - enabled: 1
-    path: Assets/Scenes/Minigame1.unity
+    path: Assets/Scenes/Minigames/Minigame1.unity
     guid: 8a5b4bf2a4571c547bf5c4abaa190dfb
   - enabled: 1
-    path: Assets/Scenes/Minigame2/Minigame2.unity
+    path: Assets/Scenes/Minigames/Minigame2-1.unity
     guid: 330b8b22417b0ec4fba663633c5b083c
   - enabled: 1
-    path: Assets/Scenes/Minigame3.unity
+    path: Assets/Scenes/Minigames/Minigame3.unity
     guid: 1c332bcb65267434c8b385df2f30bfce
   - enabled: 1
-    path: Assets/Scenes/Minigame4.unity
+    path: Assets/Scenes/Minigames/Minigame4.unity
     guid: 081a81a26c510e2428ed15ebc13f239c
   - enabled: 1
-    path: Assets/Scenes/Minigame5.unity
+    path: Assets/Scenes/Minigames/Minigame5.unity
     guid: b3cafca139606aa4db1fbf44db0f31c6
   - enabled: 1
-    path: Assets/Scenes/Minigame6.unity
+    path: Assets/Scenes/Minigames/Minigame6.unity
     guid: dcc901dd56a0e63439b0085291295d3c
   - enabled: 1
-    path: Assets/Scenes/Minigame7.unity
+    path: Assets/Scenes/Minigames/Minigame7.unity
     guid: 93acd1678c43d9c45a0e9ecc2e575f57
   - enabled: 1
-    path: Assets/Scenes/Minigame8.unity
+    path: Assets/Scenes/Minigames/Minigame8.unity
     guid: c5dffc1ff831d84499f5d1c5e1739926
   - enabled: 1
-    path: Assets/Scenes/Minigame9.unity
+    path: Assets/Scenes/Minigames/Minigame9.unity
     guid: b9005144e31e1654b92b879b0649fc30
   - enabled: 1
-    path: Assets/Scenes/Minigame10.unity
+    path: Assets/Scenes/Minigames/Minigame10.unity
     guid: 9114d10543613424c901c8609cf1d19e
   - enabled: 1
-    path: Assets/Scenes/Minigame11.unity
+    path: Assets/Scenes/Minigames/Minigame11.unity
     guid: fa6270798d962fd4698d50a1d3541693
   - enabled: 1
-    path: Assets/Scenes/Minigame12.unity
+    path: Assets/Scenes/Minigames/Minigame12.unity
     guid: bb842348277f88c429641a4a732177c3
   - enabled: 1
-    path: Assets/Scenes/Minigame13.unity
+    path: Assets/Scenes/Minigames/Minigame13.unity
     guid: 5a6d78f5b5173ed42935a7c4e9c389eb
   - enabled: 1
-    path: Assets/Scenes/Minigame14.unity
+    path: Assets/Scenes/Minigames/Minigame14.unity
     guid: faf001f620d49e4429bb0aeaa91af2ef
   - enabled: 1
-    path: Assets/Scenes/Minigame15.unity
+    path: Assets/Scenes/Minigames/Minigame15.unity
     guid: 47d185fe7a0c9e6469b499e09c308e8c
   - enabled: 1
-    path: Assets/Scenes/Minigame16.unity
+    path: Assets/Scenes/Minigames/Minigame16.unity
     guid: c543819b40996fe4098d0c8368665735
   - enabled: 1
-    path: Assets/Scenes/Minigame17.unity
+    path: Assets/Scenes/Minigames/Minigame17.unity
     guid: ac22bfe175f2b6c47ba80a1568e29cc7
   - enabled: 1
     path: Assets/Scenes/Options.unity
     guid: 748a71a793f83b04290eb3e56d24ae98
   - enabled: 1
-    path: Assets/Scenes/BossfightStar.unity
+    path: Assets/Scenes/Minigames/BossfightStar.unity
     guid: 1f57ea185a3f79b479925ac66baf4873
   m_configObjects: {}
