@@ -1,7 +1,12 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
 
 public class Jugador : MonoBehaviour
 {
+    private int puntos;
+    public Text puntosText;
     public float jumpForce = 10f;
     private Rigidbody2D rb;
     private bool isGrounded;
@@ -11,10 +16,13 @@ public class Jugador : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         gameObject.SetActive(true);
+        puntos = 0;
     }
 
     void Update()
     {
+        puntosText.text = puntos.ToString();
+
         if (Input.GetKeyDown(KeyCode.Space))
         {
             if (muerto == false)
@@ -30,6 +38,11 @@ public class Jugador : MonoBehaviour
         {
             Debug.Log("¡Has muerto! (Minigame11:Peligro)");
             Te_acabas_de_hacer_la_muricion();
+        }
+
+        if (collision.gameObject.CompareTag("Punto"))
+        {
+            puntos++;
         }
     }
 

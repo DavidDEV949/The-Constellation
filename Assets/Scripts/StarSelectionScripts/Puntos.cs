@@ -15,11 +15,6 @@ public class Puntos : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            puntuacion++;
-        }
-
         puntuacionText.text = puntuacion.ToString();
     }
 }
