@@ -10,6 +10,8 @@ TagManager:
   - Fuego
   - ground
   - Peligro
+  - Aste
+  - Punto
   layers:
   - Default
   - TransparentFX
