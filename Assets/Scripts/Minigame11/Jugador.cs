@@ -39,8 +39,11 @@ public class Jugador : MonoBehaviour
             Debug.Log("¡Has muerto! (Minigame11:Peligro)");
             Te_acabas_de_hacer_la_muricion();
         }
+    }
 
-        if (collision.gameObject.CompareTag("Punto"))
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Punto"))
         {
             puntos++;
         }
