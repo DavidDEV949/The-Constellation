@@ -2,62 +2,71 @@
 
 public class MigulitoMovement : MonoBehaviour
 {
-    public Transform migulitoTransform;
+    public float nSpeed = 0.5f; //Velocidad promedio
+    public float goofyAhhSpeed = 2.0f; //Pos eso
+    public float isAlerted = 0f;
     public float speed = 1.0f;
-    private Vector2 targetPosition;
-    private bool moving = false;
+    public SpriteRenderer spriteRenderer;
 
     void Start()
     {
-        // Configurar la posición inicial de Migulito
-        migulitoTransform.position = new Vector2(9.87f, -0.87f);
-        // Establecer la posición de destino
-        targetPosition = new Vector2(2.37f, migulitoTransform.position.y);
-        // Comenzar el movimiento
-        MoveToTarget(targetPosition, 0.8f);
+        //1.99
+        //-0.75
+
+        //-7.4
+        //8.1
+
+        //2
     }
 
     void Update()
     {
-        if (moving)
+
+        if (Input.GetMouseButtonDown(0))
         {
-            // Mover Migulito hacia la posición de destino
-            migulitoTransform.position = Vector2.MoveTowards(migulitoTransform.position, targetPosition, speed * Time.deltaTime);
+            isAlerted = Random.Range(5f, 7f);
+        }
 
-            // Comprobar si hemos alcanzado la posición de destino
-            if (Vector2.Distance(migulitoTransform.position, targetPosition) < 0.01f)
+        if(isAlerted > 0)
+        {
+            speed = goofyAhhSpeed * ManagingFunctions.BoolToInt(spriteRenderer.flipX);
+            isAlerted -= Time.deltaTime;
+        }
+        else
+        {
+            speed = nSpeed * ManagingFunctions.BoolToInt(spriteRenderer.flipX);
+        }
+
+        if (transform.position.x > 2)
+        {
+            if(transform.position.y <= -0.67f)
             {
-                // Si hemos llegado, detener el movimiento
-                moving = false;
-
-                // Comprobar la posición actual para determinar el siguiente movimiento
-                if (targetPosition.x == 2.37f)
-                {
-                    // Subir hacia la siguiente posición
-                    targetPosition = new Vector2(1.27f, 1.84f);
-                    MoveToTarget(targetPosition, 0.5f);
-                }
-                else if (targetPosition.x == 1.27f && targetPosition.y == 1.84f)
-                {
-                    // Avanzar hacia la última posición
-                    targetPosition = new Vector2(-9.8f, 1.84f);
-                    MoveToTarget(targetPosition, 0.8f);
-                }
-                else if (targetPosition.x == -9.8f)
-                {
-                    // Ocultar Migulito
-                    migulitoTransform.gameObject.SetActive(false);
-                }
+                transform.position = new Vector2(transform.position.x + speed * Time.deltaTime, -0.67f);
+            }
+            else
+            {
+                transform.position = new Vector2(transform.position.x + speed * Time.deltaTime, transform.position.y - 4 * Time.deltaTime);
             }
         }
-    }
+        else
+        {
+            if (transform.position.y >= 2.05f)
+            {
+                transform.position = new Vector2(transform.position.x + speed * Time.deltaTime, 2.05f);
+            }
+            else
+            {
+                transform.position = new Vector2(transform.position.x, transform.position.y + 6 * Time.deltaTime);
+            }
+        }
 
-    void MoveToTarget(Vector2 target, float time)
-    {
-        // Configurar la posición de destino y activar el movimiento
-        targetPosition = target;
-        moving = true;
-        // Calcular la velocidad de movimiento
-        speed = Vector2.Distance(migulitoTransform.position, targetPosition) / time;
+        if (transform.position.x < -7.4f)
+        {
+            spriteRenderer.flipX = true;
+        }
+        if (transform.position.x > 8.1f)
+        {
+            spriteRenderer.flipX = false;
+        }
     }
 }
