@@ -12,6 +12,7 @@ TagManager:
   - Peligro
   - Aste
   - Punto
+  - M6_Collider
   layers:
   - Default
   - TransparentFX
