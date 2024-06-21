@@ -13,6 +13,7 @@ TagManager:
   - Aste
   - Punto
   - M6_Collider
+  - Enemigo
   layers:
   - Default
   - TransparentFX

@@ -6,6 +6,7 @@ public class ShootingController : MonoBehaviour
 {
 
     [SerializeField] private Transform ShooterController;
+    [SerializeField] private Rigidbody2D shipRb2D;
     [SerializeField] private GameObject Bullet;
 
     void Update()
@@ -20,7 +21,8 @@ public class ShootingController : MonoBehaviour
 
     void Shoot()
     {
-        Instantiate(Bullet, ShooterController.position, ShooterController.rotation);
+        GameObject bullet = Instantiate(Bullet, ShooterController.position, ShooterController.rotation);
+        bullet.GetComponent<BulletController>().RecalculateVelocity(shipRb2D.velocity.x, 20f);
     }
 
 }

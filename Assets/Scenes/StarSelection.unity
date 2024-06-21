@@ -1069,7 +1069,7 @@ GameObject:
   - component: {fileID: 477754377}
   - component: {fileID: 477754376}
   m_Layer: 5
-  m_Name: Minigame16
+  m_Name: Minigame14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1088,7 +1088,7 @@ RectTransform:
   m_Children:
   - {fileID: 1025919743}
   m_Father: {fileID: 760734833}
-  m_RootOrder: 16
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1739,11 +1739,11 @@ RectTransform:
   - {fileID: 1013180827}
   - {fileID: 892156054}
   - {fileID: 1277253065}
-  - {fileID: 1681510118}
-  - {fileID: 1708814762}
-  - {fileID: 524465438}
-  - {fileID: 477754375}
   - {fileID: 2044508573}
+  - {fileID: 477754375}
+  - {fileID: 524465438}
+  - {fileID: 1708814762}
+  - {fileID: 1681510118}
   - {fileID: 1182405093}
   - {fileID: 123320007}
   - {fileID: 1532356323}
@@ -2725,7 +2725,7 @@ GameObject:
   - component: {fileID: 1148547058}
   - component: {fileID: 1148547057}
   m_Layer: 5
-  m_Name: Minigame2
+  m_Name: Minigame2-1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3852,7 +3852,7 @@ GameObject:
   - component: {fileID: 1681510120}
   - component: {fileID: 1681510119}
   m_Layer: 5
-  m_Name: Minigame13
+  m_Name: Minigame17
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3871,7 +3871,7 @@ RectTransform:
   m_Children:
   - {fileID: 1795387004}
   m_Father: {fileID: 760734833}
-  m_RootOrder: 13
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4112,7 +4112,7 @@ GameObject:
   - component: {fileID: 1708814764}
   - component: {fileID: 1708814763}
   m_Layer: 5
-  m_Name: Minigame14
+  m_Name: Minigame16
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4131,7 +4131,7 @@ RectTransform:
   m_Children:
   - {fileID: 1727108232}
   m_Father: {fileID: 760734833}
-  m_RootOrder: 14
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4927,7 +4927,7 @@ GameObject:
   - component: {fileID: 2044508575}
   - component: {fileID: 2044508574}
   m_Layer: 5
-  m_Name: Minigame17
+  m_Name: Minigame13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4946,7 +4946,7 @@ RectTransform:
   m_Children:
   - {fileID: 1982192433}
   m_Father: {fileID: 760734833}
-  m_RootOrder: 17
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
