@@ -14,6 +14,7 @@ TagManager:
   - Punto
   - M6_Collider
   - Enemigo
+  - Moneda
   layers:
   - Default
   - TransparentFX

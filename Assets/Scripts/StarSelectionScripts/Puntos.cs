@@ -5,16 +5,16 @@ using UnityEngine.UI;
 
 public class Puntos : MonoBehaviour
 {
-    private int puntuacion;
-    public Text puntuacionText;
+    private int monedas;
+    public Text monedasText;
 
     void Start()
     {
-        puntuacion = 0;
+        monedas = 0;
     }
 
     void Update()
     {
-        puntuacionText.text = puntuacion.ToString();
+        monedasText.text = monedas.ToString();
     }
 }
